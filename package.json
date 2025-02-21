@@ -1,0 +1,31 @@
+{
+  "name": "nexusbackend",
+  "version": "1.0.0",
+  "description": "Backend do aplicativo Nexus.",
+  "keywords": [
+    "vinidevkz"
+  ],
+  "homepage": "https://github.com/Vinidevkz/NexusBackend#readme",
+  "bugs": {
+    "url": "https://github.com/Vinidevkz/NexusBackend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vinidevkz/NexusBackend.git"
+  },
+  "license": "ISC",
+  "author": "Vinicius Eduardo",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1",
+    "node-modules": "^1.0.1",
+    "nodemon": "^3.1.9"
+  }
+}
