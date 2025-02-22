@@ -4,8 +4,6 @@ import cors from 'cors';
 import express from 'express'
 import connectDB from './src/database/connection.js'
 
-
-
 const app = express()
 const port = 3000
 app.use(cors());

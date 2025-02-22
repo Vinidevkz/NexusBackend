@@ -6,8 +6,8 @@ import authMiddleware from '../config/authMiddleware.js'
 const router = express.Router()
 
 //User routes
-router.post('/signon', authMiddleware, createUser)
-router.post('/signin', authMiddleware, loginUser)
+router.post('/signon', createUser)
+router.post('/signin', loginUser)
 router.put('/update', authMiddleware, updateUser)
 router.delete('/delete', authMiddleware, deleteUser)
 

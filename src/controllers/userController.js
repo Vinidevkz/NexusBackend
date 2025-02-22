@@ -2,7 +2,6 @@ import User from "../models/user.js"
 import generateToken from "../config/authToken.js"
 
 export const createUser = async (req, res) => {
-
     try {
         const {name, email, password, bio, age, area} = req.body
 
@@ -18,8 +17,7 @@ export const createUser = async (req, res) => {
         //generate token
         const token = generateToken(newUser._id)
 
-        res.status(200).json({message: 'Cadastro realizado com sucesso!'})
-        res.json({newUser, token})
+        res.status(200).json({message: 'Cadastro realizado com sucesso!', newUser, token})
     } catch (error) {
         console.error('Erro ao se cadastrar: ', error)
         res.status(500).json({message: 'Erro interno do servidor'})
